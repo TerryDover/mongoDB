@@ -1,0 +1,77 @@
+const recipesArr =
+[
+[
+  {
+    "recipeName": "Cheese Burger",
+    "recipeDesc": "Burger with cheese on a bun",
+    "instructions": "Grill burger, melt cheese and put on bun.",
+    "ingredients": [
+      {
+        "ingredientName": "bun",
+        "measure": "pieces",
+        "qty": "1"
+      },
+      {
+        "ingredientName": "cheese",
+        "measure": "slices",
+        "qty": "1"
+      },
+      {
+        "ingredientName": "hamburger",
+        "measure": "patty",
+        "qty": "1"
+      }
+    ]
+  },
+  {
+    "recipeName": "Cheese and Crackers",
+    "recipeDesc": "Crackers served with Cheese",
+    "instructions": "Slice cheese and serve with crackers.",
+    "ingredients": [
+      {
+        "ingredientName": "crackers",
+        "measure": "pieces",
+        "qty": "1"
+      },
+      {
+        "ingredientName": "cheese",
+        "measure": "slices",
+        "qty": "1"
+      },
+      
+    ]
+  },
+  {
+    "recipeName": "Bologna Sandwich",
+    "recipeDesc": "Coldcut sandwich",
+    "instructions": "Place bologna and cheese between two slices of bread",
+    "ingredients": [
+      {
+        "ingredientName": "bread",
+        "measure": "slices",
+        "qty": "2"
+      },
+      {
+        "ingredientName": "cheese",
+        "measure": "slices",
+        "qty": "1"
+      },
+      {
+        "ingredientName": "bologna",
+        "measure": "slices",
+        "qty": "1"
+      }
+    ]
+  },
+  
+];
+/* Insert Many */
+  db.recipes.insertMany(recipesFiles);
+
+/* query to get all recipes*/
+   db.recipes.find();
+
+   /* query to find particular ingredient */
+   db.recipes.find({"ingredients.ingredientName":"hamburger"});
+   
+
